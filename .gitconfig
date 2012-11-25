@@ -1,0 +1,19 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+
+[user]
+	name = inouire
+	email = edouard@melix.net
+
+[core]
+        editor = nano
+
+[alias]
+	st = status
+	ci = commit
+	nicelog = log -M --decorate --graph --oneline
+	unstage = reset HEAD 
+	discard = checkout -- 
