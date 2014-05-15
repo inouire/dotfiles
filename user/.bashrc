@@ -6,3 +6,6 @@ export PS1="\[\e[0;44m\][\u@\h:\W]\$(parse_git_branch) $ \[\e[0m\]"
 
 #green background version, without git branch
 #export PS1="\[\e[0;42m\][\u@\h:\W] $ \[\e[0m\]"
+
+# awesome way to display logs
+function vlogs { tail -f $@ | ccze -A; }
