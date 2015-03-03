@@ -11,4 +11,4 @@ export PS1="\[\e[0;44m\][\u@\h:\W]\$(parse_git_branch) $ \[\e[0m\]"
 function vlogs { tail -f $@ | ccze -A; }
 
 # create a timestamped tgz of a directory
-function tgzstamp {tar -czf $@_`date +%Y%m%d_%H%M%S`.tar.gz $@ && echo "Timestamped tgz of directory $@ created in current directory"; }
+function tgzstamp { tar -czf $@_`date +%Y%m%d_%H%M%S`.tar.gz $@ && echo "Timestamped tgz of directory $@ created in current directory"; }
