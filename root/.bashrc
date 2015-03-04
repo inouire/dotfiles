@@ -3,3 +3,6 @@ export PS1="\[\e[0;45m\][\u@\h:\W] $ \[\e[0m\]"
 
 #red background version
 #export PS1="\[\e[0;41m\][\u@\h:\W] $ \[\e[0m\]"
+
+# upgrade debian packages
+alias upgrade='apt-get update && apt-get upgrade'
