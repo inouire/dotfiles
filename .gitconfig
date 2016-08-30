@@ -17,3 +17,8 @@
 	nicelog = log -M --decorate --graph --oneline
 	unstage = reset HEAD 
 	discard = checkout -- 
+        reco = commit --amend
+        rbi = rebase -i
+        pur = pull --rebase
+        puf = push --force
+        wazup = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committe$
